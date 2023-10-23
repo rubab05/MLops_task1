@@ -17,7 +17,7 @@ pipeline {
         
         stage('Run Tests') {
             steps {
-                bat 'python apps.py'
+                bat 'python app.py'
             }
         }
     }
