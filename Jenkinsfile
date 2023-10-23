@@ -8,10 +8,10 @@ pipeline {
             }
         }
 
-        stage('Install Requirements') {
-            steps {
-                bat 'python3 --version'
-                bat 'pip3 install --user -r requirements.txt'
+    stage('Install Requirements') {
+        steps {
+                bat 'C:\\Path\\To\\Python3\\python --version'
+                bat 'C:\\Path\\To\\Python3\\pip install --user -r requirements.txt'
             }
         }
 
