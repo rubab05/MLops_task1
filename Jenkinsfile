@@ -21,7 +21,7 @@ pipeline {
                     t = load 'task7.groovy'
                     t.func('production')
                 }
-            }
-        }
+            }
+        }
     }
 }
