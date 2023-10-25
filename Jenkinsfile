@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                     t = load 'task7.groovy'
-                    t.func('production')
+                    t.testfunc('production')
                 }
             }
         }
