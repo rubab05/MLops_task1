@@ -10,7 +10,7 @@ pipeline {
 
         stage('Install Requirements') {
             steps {
-                echo "hello world"
+                echo 'hello world'
             }
         }
         
