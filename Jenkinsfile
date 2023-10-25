@@ -10,8 +10,9 @@ pipeline {
 
         stage('Install Requirements') {
             steps {
-                bat 'python3 --version'
-                bat 'pip3 install --user -r requirements.txt'
+                //bat 'python3 --version'
+                //bat 'pip3 install --user -r requirements.txt'
+                echo ("hello world")
             }
         }
         
@@ -20,5 +21,14 @@ pipeline {
                 bat 'python3 app.py'
             }
         }
+
+        stage('Groovy'){
+            steps {
+                script {
+                    t = load 'task7.groovy'
+                    t.func('production')
+                }
+            }
+        }
     }
 }
