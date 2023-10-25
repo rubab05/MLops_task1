@@ -3,6 +3,6 @@ def testfunc(String t){
     println('Deploying to production')
   } else {
     println('Deploying to test')
-  }
+  }
 }
 return this
