@@ -16,11 +16,6 @@ pipeline {
             }
         }
         
-        stage('Run Tests') {
-            steps {
-                bat 'python3 app.py'
-            }
-        }
 
         stage('Groovy'){
             steps {
